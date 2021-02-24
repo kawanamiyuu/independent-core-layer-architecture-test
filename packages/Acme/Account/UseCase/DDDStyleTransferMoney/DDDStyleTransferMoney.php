@@ -67,33 +67,3 @@ final class DDDStyleTransferMoney
         });
     }
 }
-
-interface DDDStyleTransferMoneyQuery
-{
-    /**
-     * @param AccountNumber $sourceNumber
-     * @param AccountNumber $destinationNumber
-     * @return TransferMoneyAggregate
-     */
-    public function find(AccountNumber $sourceNumber, AccountNumber $destinationNumber): TransferMoneyAggregate;
-
-    /**
-     * @param AccountNumber $accountNumber
-     * @return Account
-     * @throws NotFoundException
-     */
-    public function findAccount(AccountNumber $accountNumber): Account;
-}
-
-interface DDDStyleTransferMoneyCommandPort
-{
-    /**
-     * @param TransferMoneyAggregate $aggregate
-     */
-    public function store(TransferMoneyAggregate $aggregate): void;
-
-    /**
-     * @param Account $account
-     */
-    public function notify(Account $account): void;
-}

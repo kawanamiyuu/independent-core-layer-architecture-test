@@ -1,4 +1,4 @@
-FROM php:7.2-fpm
+FROM php:8.0-fpm
 
 # Install PHP extensions
 RUN apt-get update && apt-get install -y \

@@ -121,38 +121,3 @@ final class TransferMoney
         ));
     }
 }
-
-interface TransferMoneyQueryPort
-{
-    /**
-     * @param AccountNumber $accountNumber
-     * @return Account
-     */
-    public function findAndLockAccount(AccountNumber $accountNumber): Account;
-
-    /**
-     * @param AccountNumber $accountNumber
-     * @return Account
-     * @throws NotFoundException
-     */
-    public function findAccount(AccountNumber $accountNumber): Account;
-}
-
-interface TransferMoneyCommandPort
-{
-    /**
-     * @param AccountNumber $accountNumber
-     * @param Balance $balance
-     */
-    public function storeBalance(AccountNumber $accountNumber, Balance $balance): void;
-
-    /**
-     * @param Transaction $transaction
-     */
-    public function addTransaction(Transaction $transaction): void;
-
-    /**
-     * @param Account $account
-     */
-    public function notify(Account $account): void;
-}

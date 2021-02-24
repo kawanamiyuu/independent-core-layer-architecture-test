@@ -132,22 +132,3 @@ interface ProcedureStyleTransferMoneyQueryPort
      */
     public function findAccount(string $accountNumber): array;
 }
-
-interface ProcedureStyleTransferMoneyCommandPort
-{
-    /**
-     * @param string $accountNumber
-     * @param int $balance
-     */
-    public function storeBalance(string $accountNumber, int $balance): void;
-
-    /**
-     * @param array $transaction
-     */
-    public function addTransaction(array $transaction): void;
-
-    /**
-     * @param array $account
-     */
-    public function notify(array $account): void;
-}

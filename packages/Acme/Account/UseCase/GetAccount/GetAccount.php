@@ -30,13 +30,3 @@ final class GetAccount
         return $this->query->findAccount($accountNumber);
     }
 }
-
-interface GetAccountQueryPort
-{
-    /**
-     * @param AccountNumber $accountNumber
-     * @return Account
-     * @throws NotFoundException
-     */
-    public function findAccount(AccountNumber $accountNumber): Account;
-}

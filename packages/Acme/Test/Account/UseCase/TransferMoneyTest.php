@@ -28,7 +28,7 @@ final class TransferMoneyTest extends TestCase
     /** @var Account */
     public $notifyAccount;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
