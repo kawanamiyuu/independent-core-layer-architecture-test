@@ -55,6 +55,11 @@
     "post-autoload-dump": [
       "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
       "@php artisan package:discover"
+    ],
+    "deptrac": [
+      "@php deptrac.phar analyze depfile.yaml",
+      "@php deptrac.phar analyze depfile-core.yaml",
+      "@php deptrac.phar analyze depfile-service.yaml"
     ]
   },
   "config": {

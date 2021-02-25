@@ -1,0 +1,24 @@
+# Architecture Test between Core Layer, Service Layer and Framework
+paths:
+  - app/
+  - packages/Acme/
+exclude_files:
+  - .*test.*
+layers:
+  - name: Core
+    collectors:
+      - type: className
+        regex: Core\\.*
+  - name: Service
+    collectors:
+      - type: className
+        regex: Service\\.*
+  - name: Framework
+    collectors:
+      - type: className
+        regex: Illuminate\\.*
+ruleset:
+  Core: ~
+  Service:
+    - Core
+    - Framework

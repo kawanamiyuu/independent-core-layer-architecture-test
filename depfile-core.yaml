@@ -1,0 +1,18 @@
+# Architecture Test for Core Layer
+paths:
+  - packages/Acme/
+exclude_files:
+  - .*test.*
+layers:
+  - name: Domain
+    collectors:
+      - type: className
+        regex: Core\\.*\\Domain\\.*
+  - name: UseCase
+    collectors:
+      - type: className
+        regex: Core\\.*\\UseCase\\.*
+ruleset:
+  Domain: ~
+  UseCase:
+    - Domain

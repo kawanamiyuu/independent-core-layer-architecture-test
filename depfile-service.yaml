@@ -1,0 +1,33 @@
+# Architecture Test for Service Layer
+paths:
+  - app/
+exclude_files:
+  - .*test.*
+layers:
+  - name: Action
+    collectors:
+      - type: className
+        regex: Service\\Action\\.*Action
+  - name: Adapter
+    collectors:
+      - type: className
+        regex: Service\\Action\\.*Adapter
+  - name: Http
+    collectors:
+      - type: className
+        regex: Service\\Http\\.*
+  - name: Eloquents
+    collectors:
+      - type: className
+        regex: Service\\Eloquents\\.*
+  - name: Mail
+    collectors:
+      - type: className
+        regex: Service\\Mail\\.*
+ruleset:
+  Action:
+    - Adapter
+    - Http
+  Adapter:
+    - Eloquents
+    - Mail
