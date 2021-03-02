@@ -1,0 +1,5 @@
+# Architecture Test for Service Layer
+src:
+  path: app/
+tests:
+  path: tests/Architecture/ServiceLayer

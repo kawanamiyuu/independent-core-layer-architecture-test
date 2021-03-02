@@ -1,0 +1,5 @@
+# Architecture Test for Core Layer
+src:
+  path: packages/Acme/
+tests:
+  path: tests/Architecture/CoreLayer
