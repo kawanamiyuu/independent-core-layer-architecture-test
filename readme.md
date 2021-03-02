@@ -1,54 +1,45 @@
-# Independent core layer pattern with Laravel
+# Architecture Test Example for Independent core layer pattern
 
-[![CircleCI](https://circleci.com/gh/shin1x1/independent-core-layer-laravel.svg?style=svg)](https://circleci.com/gh/shin1x1/independent-core-layer-laravel)
+## What is Independent core layer pattern
 
-![independent-core-layer-pattern](https://user-images.githubusercontent.com/88324/39868526-f39c9354-5494-11e8-8012-1170e7004ff4.png)
+* https://github.com/shin1x1/independent-core-layer-laravel
+* https://blog.shin1x1.com/entry/independent-core-layer-pattern
 
-[blog](http://blog.shin1x1.com/entry/independent-core-layer-pattern)
+## Architecture Tests
 
-## Requirements
+### via [qossmic/deptrac](https://github.com/qossmic/deptrac)
 
-* Docker ( I tested on Docker for Mac. )
-* docker-compose
-* make
+> Deptrac is a static code analysis tool that helps to enforce rules for dependencies between software layers in your PHP projects.
 
-## Installation
-
-```bash
-$ git clone this_repo
-$ cd this_repo
-$ make
-```
-
-If you do not have make command.
+Run tests
 
 ```bash
-$ docker-compose up -d
-$ cp .env.example .env
-$ chmod -R a+w storage/*
-$ docker-compose run composer install --prefer-dist --no-interaction
-$ docker-compose exec php-fpm php artisan key:generate
-$ docker-compose exec php-fpm php artisan migrate
-$ docker-compose exec php-fpm php artisan db:seed
+$ php deptrac.phar analyze depfile.yaml
+$ php deptrac.phar analyze depfile-core.yaml
+$ php deptrac.phar analyze depfile-service.yaml
 ```
 
-## Usage
+or
 
-### GetAccount
-
-```
-$ curl -H 'Content-Type: application/json' http://localhost:8000/api/accounts/A00001 | jq .
-{
-  "account_number": "A00001",
-  "balance": 3000
-}
+```bash
+$ composer deptrac
 ```
 
-### TransferMoney
+### via [phpat/phpat](https://github.com/carlosas/phpat)
 
+> **PHP Architecture Tester** is a static analysis tool to verify architectural requirements.
+>
+> It provides a natural language abstraction to define your own architectural rules and test them against your software. You can also integrate _phpat_ easily into your toolchain.
+
+Run tests
+
+```bash
+$ ./vendor/bin/phpat phpat-core.yaml
+$ ./vendor/bin/phpat phpat-serivce.yaml
 ```
-$ curl -X PUT -d '{"destination_number":"B00001","money":100}' -H 'Content-Type: application/json' http://localhost:8000/api/accounts/A00001/transfer | jq .
-{
-  "balance": 2900
-}
+
+or
+
+```bash
+$ composer phpat
 ```
