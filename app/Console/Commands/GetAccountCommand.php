@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Service\Console\Commands;
 
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\UseCase\GetAccount\GetAccount;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\UseCase\GetAccount\GetAccount;
 use Illuminate\Console\Command;
 
 class GetAccountCommand extends Command
@@ -32,7 +32,7 @@ class GetAccountCommand extends Command
     }
 
     /**
-     * @throws \Acme\Account\Domain\Exceptions\NotFoundException
+     * @throws \Core\Account\Domain\Exceptions\NotFoundException
      */
     public function handle()
     {

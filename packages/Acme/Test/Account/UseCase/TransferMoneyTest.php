@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Test\Account\UseCase;
+namespace Core\Test\Account\UseCase;
 
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\Domain\Models\Balance;
-use Acme\Account\Domain\Models\Money;
-use Acme\Account\Domain\Models\Transaction;
-use Acme\Account\Domain\Models\TransactionTime;
-use Acme\Account\UseCase\Ports\TransactionPort;
-use Acme\Account\UseCase\TransportMoney\TransferMoney;
-use Acme\Account\UseCase\TransportMoney\TransferMoneyCommandPort;
-use Acme\Account\UseCase\TransportMoney\TransferMoneyQueryPort;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Models\Balance;
+use Core\Account\Domain\Models\Money;
+use Core\Account\Domain\Models\Transaction;
+use Core\Account\Domain\Models\TransactionTime;
+use Core\Account\UseCase\Ports\TransactionPort;
+use Core\Account\UseCase\TransportMoney\TransferMoney;
+use Core\Account\UseCase\TransportMoney\TransferMoneyCommandPort;
+use Core\Account\UseCase\TransportMoney\TransferMoneyQueryPort;
 use Cake\Chronos\Chronos;
 use PHPUnit\Framework\TestCase;
 
@@ -85,7 +85,7 @@ final class TransferMoneyTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Acme\Account\Domain\Exceptions\NotFoundException
+     * @expectedException \Core\Account\Domain\Exceptions\NotFoundException
      */
     public function error_account_not_found()
     {
@@ -119,7 +119,7 @@ final class TransferMoneyTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Acme\Account\Domain\Exceptions\DomainRuleException
+     * @expectedException \Core\Account\Domain\Exceptions\DomainRuleException
      */
     public function error_same_account_number()
     {
@@ -139,7 +139,7 @@ final class TransferMoneyTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Acme\Account\Domain\Exceptions\DomainRuleException
+     * @expectedException \Core\Account\Domain\Exceptions\DomainRuleException
      */
     public function error_lack_balance()
     {

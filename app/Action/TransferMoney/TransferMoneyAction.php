@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Action\TransferMoney;
+namespace Service\Action\TransferMoney;
 
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\Domain\Models\Money;
-use Acme\Account\Domain\Models\TransactionTime;
-use Acme\Account\UseCase\TransportMoney\TransferMoney;
-use App\Http\Requests\TransferMoneyRequest;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Models\Money;
+use Core\Account\Domain\Models\TransactionTime;
+use Core\Account\UseCase\TransportMoney\TransferMoney;
+use Service\Http\Requests\TransferMoneyRequest;
 
 final class TransferMoneyAction
 {

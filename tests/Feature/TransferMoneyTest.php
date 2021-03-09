@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Tests\Feature;
 
-use Acme\Account\Domain\Models\TransactionType;
-use App\Mail\TransferMoneyMail;
+use Core\Account\Domain\Models\TransactionType;
+use Service\Mail\TransferMoneyMail;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Seeder;
 use Illuminate\Foundation\Testing\DatabaseTransactions;

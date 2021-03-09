@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-use Acme\Account\Domain\Models\TransactionType;
+use Core\Account\Domain\Models\TransactionType;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;

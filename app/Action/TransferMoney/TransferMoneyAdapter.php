@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Action\TransferMoney;
+namespace Service\Action\TransferMoney;
 
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\Domain\Models\Balance;
-use Acme\Account\Domain\Models\Transaction;
-use Acme\Account\UseCase\TransportMoney\TransferMoneyCommandPort;
-use Acme\Account\UseCase\TransportMoney\TransferMoneyQueryPort;
-use App\Eloquents\EloquentAccount;
-use App\Eloquents\EloquentTransaction;
-use App\Mail\TransferMoneyMail;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Models\Balance;
+use Core\Account\Domain\Models\Transaction;
+use Core\Account\UseCase\TransportMoney\TransferMoneyCommandPort;
+use Core\Account\UseCase\TransportMoney\TransferMoneyQueryPort;
+use Service\Eloquents\EloquentAccount;
+use Service\Eloquents\EloquentTransaction;
+use Service\Mail\TransferMoneyMail;
 use Illuminate\Contracts\Mail\Mailer;
 
 final class TransferMoneyAdapter implements

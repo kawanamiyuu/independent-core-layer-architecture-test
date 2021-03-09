@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Acme\Account\UseCase\DDDStyleTransferMoney;
+namespace Core\Account\UseCase\DDDStyleTransferMoney;
 
-use Acme\Account\Domain\Aggregates\TransferMoneyAggregate;
-use Acme\Account\Domain\Models\Account;
+use Core\Account\Domain\Aggregates\TransferMoneyAggregate;
+use Core\Account\Domain\Models\Account;
 
 interface DDDStyleTransferMoneyCommandPort
 {

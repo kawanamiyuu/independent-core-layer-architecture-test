@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Console;
+namespace Service\Console;
 
-use App\Console\Commands\GetAccountCommand;
+use Service\Console\Commands\GetAccountCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Providers;
+namespace Service\Providers;
 
 use Illuminate\Database\Connection;
 use Illuminate\Database\Events\QueryExecuted;

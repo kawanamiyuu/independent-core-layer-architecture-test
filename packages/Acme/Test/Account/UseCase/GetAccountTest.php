@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Test\Account\UseCase;
+namespace Core\Test\Account\UseCase;
 
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\UseCase\GetAccount\GetAccount;
-use Acme\Account\UseCase\GetAccount\GetAccountQueryPort;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\UseCase\GetAccount\GetAccount;
+use Core\Account\UseCase\GetAccount\GetAccountQueryPort;
 use PHPUnit\Framework\TestCase;
 
 final class GetAccountTest extends TestCase
@@ -41,7 +41,7 @@ final class GetAccountTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Acme\Account\Domain\Exceptions\NotFoundException
+     * @expectedException \Core\Account\Domain\Exceptions\NotFoundException
      */
     public function error_account_not_found()
     {

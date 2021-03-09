@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Acme\Account\UseCase\ProcedureStyleTransferMoney;
+namespace Core\Account\UseCase\ProcedureStyleTransferMoney;
 
 interface ProcedureStyleTransferMoneyCommandPort
 {

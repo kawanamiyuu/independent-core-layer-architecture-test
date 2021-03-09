@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Eloquents;
+namespace Service\Eloquents;
 
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\Domain\Models\Balance;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Models\Balance;
 use Illuminate\Database\Eloquent\Model;
 
 /**

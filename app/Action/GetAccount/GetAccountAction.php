@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Action\GetAccount;
+namespace Service\Action\GetAccount;
 
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\UseCase\GetAccount\GetAccount;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\UseCase\GetAccount\GetAccount;
 use Illuminate\Http\Request;
 
 final class GetAccountAction
@@ -24,7 +24,7 @@ final class GetAccountAction
      * @param Request $request
      * @param string $accountNumber
      * @return \Illuminate\Http\JsonResponse
-     * @throws \Acme\Account\Domain\Exceptions\NotFoundException
+     * @throws \Core\Account\Domain\Exceptions\NotFoundException
      */
     public function __invoke(Request $request, string $accountNumber)
     {

@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Action\ProcedureStyleTransferMoney;
+namespace Service\Action\ProcedureStyleTransferMoney;
 
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\UseCase\ProcedureStyleTransferMoney\ProcedureStyleTransferMoneyCommandPort;
-use Acme\Account\UseCase\ProcedureStyleTransferMoney\ProcedureStyleTransferMoneyQueryPort;
-use App\Eloquents\EloquentAccount;
-use App\Eloquents\EloquentTransaction;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\UseCase\ProcedureStyleTransferMoney\ProcedureStyleTransferMoneyCommandPort;
+use Core\Account\UseCase\ProcedureStyleTransferMoney\ProcedureStyleTransferMoneyQueryPort;
+use Service\Eloquents\EloquentAccount;
+use Service\Eloquents\EloquentTransaction;
 use Illuminate\Contracts\Mail\Mailer;
 
 final class ProcedureStyleTransferMoneyAdapter implements

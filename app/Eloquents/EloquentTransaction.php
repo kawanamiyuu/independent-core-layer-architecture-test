@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Eloquents;
+namespace Service\Eloquents;
 
-use Acme\Account\Domain\Models\Transaction;
+use Core\Account\Domain\Models\Transaction;
 use Illuminate\Database\Eloquent\Model;
 
 /**

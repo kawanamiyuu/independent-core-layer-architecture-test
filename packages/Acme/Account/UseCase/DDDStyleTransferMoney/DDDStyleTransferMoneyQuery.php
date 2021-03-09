@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Acme\Account\UseCase\DDDStyleTransferMoney;
+namespace Core\Account\UseCase\DDDStyleTransferMoney;
 
-use Acme\Account\Domain\Aggregates\TransferMoneyAggregate;
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Aggregates\TransferMoneyAggregate;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\AccountNumber;
 
 interface DDDStyleTransferMoneyQuery
 {

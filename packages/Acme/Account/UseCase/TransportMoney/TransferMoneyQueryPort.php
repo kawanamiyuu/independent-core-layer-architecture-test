@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Acme\Account\UseCase\TransportMoney;
+namespace Core\Account\UseCase\TransportMoney;
 
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\AccountNumber;
 
 interface TransferMoneyQueryPort
 {

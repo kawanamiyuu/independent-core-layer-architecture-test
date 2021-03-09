@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Account\Domain\Models;
+namespace Core\Account\Domain\Models;
 
-use Acme\Account\Domain\Exceptions\InvariantException;
+use Core\Account\Domain\Exceptions\InvariantException;
 
 final class Balance
 {

@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Providers;
+namespace Service\Providers;
 
-use Acme\Account\UseCase\DDDStyleTransferMoney\DDDStyleTransferMoney;
-use Acme\Account\UseCase\GetAccount\GetAccount;
-use Acme\Account\UseCase\Ports\TransactionPort;
-use Acme\Account\UseCase\ProcedureStyleTransferMoney\ProcedureStyleTransferMoney;
-use Acme\Account\UseCase\TransportMoney\TransferMoney;
-use App\Action\DDDStyleTransferMoney\DDDStyleTransferMoneyAdapter;
-use App\Action\GetAccount\GetAccountAdapter;
-use App\Action\ProcedureStyleTransferMoney\ProcedureStyleTransferMoneyAdapter;
-use App\Action\TransferMoney\TransferMoneyAdapter;
+use Core\Account\UseCase\DDDStyleTransferMoney\DDDStyleTransferMoney;
+use Core\Account\UseCase\GetAccount\GetAccount;
+use Core\Account\UseCase\Ports\TransactionPort;
+use Core\Account\UseCase\ProcedureStyleTransferMoney\ProcedureStyleTransferMoney;
+use Core\Account\UseCase\TransportMoney\TransferMoney;
+use Service\Action\DDDStyleTransferMoney\DDDStyleTransferMoneyAdapter;
+use Service\Action\GetAccount\GetAccountAdapter;
+use Service\Action\ProcedureStyleTransferMoney\ProcedureStyleTransferMoneyAdapter;
+use Service\Action\TransferMoney\TransferMoneyAdapter;
 use Illuminate\Database\Connection;
 use Illuminate\Support\ServiceProvider;
 

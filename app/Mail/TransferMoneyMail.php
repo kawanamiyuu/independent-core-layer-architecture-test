@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Mail;
+namespace Service\Mail;
 
-use Acme\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\Account;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;

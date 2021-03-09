@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Account\Domain\Specifications;
+namespace Core\Account\Domain\Specifications;
 
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\Money;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\Money;
 
 final class WithdrawSpec
 {

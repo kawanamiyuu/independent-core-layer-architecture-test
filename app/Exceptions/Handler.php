@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Exceptions;
+namespace Service\Exceptions;
 
-use Acme\Account\Domain\Exceptions\DomainException;
+use Core\Account\Domain\Exceptions\DomainException;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpFoundation\Response;

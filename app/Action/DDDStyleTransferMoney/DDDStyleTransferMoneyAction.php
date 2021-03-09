@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Action\DDDStyleTransferMoney;
+namespace Service\Action\DDDStyleTransferMoney;
 
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\Domain\Models\Money;
-use Acme\Account\Domain\Models\TransactionTime;
-use Acme\Account\UseCase\DDDStyleTransferMoney\DDDStyleTransferMoney;
-use App\Http\Requests\TransferMoneyRequest;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Models\Money;
+use Core\Account\Domain\Models\TransactionTime;
+use Core\Account\UseCase\DDDStyleTransferMoney\DDDStyleTransferMoney;
+use Service\Http\Requests\TransferMoneyRequest;
 
 final class DDDStyleTransferMoneyAction
 {

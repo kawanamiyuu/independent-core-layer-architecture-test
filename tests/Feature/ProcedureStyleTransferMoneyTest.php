@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests\Feature;
 
-use Acme\Account\UseCase\ProcedureStyleTransferMoney\ProcedureStyleTransferMoney;
+use Core\Account\UseCase\ProcedureStyleTransferMoney\ProcedureStyleTransferMoney;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Seeder;
 use Illuminate\Foundation\Testing\DatabaseTransactions;

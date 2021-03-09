@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Account\Domain\Specifications;
+namespace Core\Account\Domain\Specifications;
 
-use Acme\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\Account;
 
 final class DifferentAccountSpec
 {

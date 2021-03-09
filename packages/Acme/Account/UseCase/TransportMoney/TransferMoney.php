@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Account\UseCase\TransportMoney;
+namespace Core\Account\UseCase\TransportMoney;
 
-use Acme\Account\Domain\Exceptions\DomainRuleException;
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\Domain\Models\Balance;
-use Acme\Account\Domain\Models\Money;
-use Acme\Account\Domain\Models\Transaction;
-use Acme\Account\Domain\Models\TransactionTime;
-use Acme\Account\Domain\Models\TransactionType;
-use Acme\Account\UseCase\Ports\TransactionPort;
+use Core\Account\Domain\Exceptions\DomainRuleException;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Models\Balance;
+use Core\Account\Domain\Models\Money;
+use Core\Account\Domain\Models\Transaction;
+use Core\Account\Domain\Models\TransactionTime;
+use Core\Account\Domain\Models\TransactionType;
+use Core\Account\UseCase\Ports\TransactionPort;
 
 final class TransferMoney
 {

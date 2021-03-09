@@ -30,8 +30,8 @@
       "database/factories"
     ],
     "psr-4": {
-      "Acme\\": "packages/Acme/",
-      "App\\": "app/"
+      "Core\\": "packages/Acme/",
+      "Service\\": "app/"
     }
   },
   "autoload-dev": {

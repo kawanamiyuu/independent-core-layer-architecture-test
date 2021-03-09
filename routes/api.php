@@ -5,10 +5,10 @@ declare(strict_types=1);
  * @var Router $router
  */
 
-use App\Action\DDDStyleTransferMoney\DDDStyleTransferMoneyAction;
-use App\Action\GetAccount\GetAccountAction;
-use App\Action\ProcedureStyleTransferMoney\ProcedureStyleTransferMoneyAction;
-use App\Action\TransferMoney\TransferMoneyAction;
+use Service\Action\DDDStyleTransferMoney\DDDStyleTransferMoneyAction;
+use Service\Action\GetAccount\GetAccountAction;
+use Service\Action\ProcedureStyleTransferMoney\ProcedureStyleTransferMoneyAction;
+use Service\Action\TransferMoney\TransferMoneyAction;
 use Illuminate\Routing\Router;
 
 /*

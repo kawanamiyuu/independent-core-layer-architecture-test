@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Providers;
+namespace Service\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'App\Model' => 'App\Policies\ModelPolicy',
+        'Service\Model' => 'Service\Policies\ModelPolicy',
     ];
 
     /**

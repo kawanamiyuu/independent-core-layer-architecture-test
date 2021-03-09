@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Account\Domain\Aggregates;
+namespace Core\Account\Domain\Aggregates;
 
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\Money;
-use Acme\Account\Domain\Models\Transaction;
-use Acme\Account\Domain\Models\TransactionTime;
-use Acme\Account\Domain\Models\TransactionType;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\Money;
+use Core\Account\Domain\Models\Transaction;
+use Core\Account\Domain\Models\TransactionTime;
+use Core\Account\Domain\Models\TransactionType;
 
 final class TransferMoneyAggregate
 {
@@ -34,7 +34,7 @@ final class TransferMoneyAggregate
     /**
      * @param Money $amount
      * @param TransactionTime $now
-     * @throws \Acme\Account\Domain\Exceptions\InvariantException
+     * @throws \Core\Account\Domain\Exceptions\InvariantException
      */
     public function transfer(Money $amount, TransactionTime $now)
     {

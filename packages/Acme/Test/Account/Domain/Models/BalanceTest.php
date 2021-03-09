@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Test\Account\Domain\Models;
+namespace Core\Test\Account\Domain\Models;
 
-use Acme\Account\Domain\Models\Balance;
+use Core\Account\Domain\Models\Balance;
 use PHPUnit\Framework\TestCase;
 
 final class BalanceTest extends TestCase
@@ -19,7 +19,7 @@ final class BalanceTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Acme\Account\Domain\Exceptions\InvariantException
+     * @expectedException \Core\Account\Domain\Exceptions\InvariantException
      */
     public function of_with_invalid_value()
     {

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Action\ProcedureStyleTransferMoney;
+namespace Service\Action\ProcedureStyleTransferMoney;
 
-use Acme\Account\UseCase\ProcedureStyleTransferMoney\ProcedureStyleTransferMoney;
-use App\Http\Requests\TransferMoneyRequest;
+use Core\Account\UseCase\ProcedureStyleTransferMoney\ProcedureStyleTransferMoney;
+use Service\Http\Requests\TransferMoneyRequest;
 use Cake\Chronos\Chronos;
 
 final class ProcedureStyleTransferMoneyAction

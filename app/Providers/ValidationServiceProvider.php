@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Providers;
+namespace Service\Providers;
 
-use Acme\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Models\AccountNumber;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Factory;
 

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Providers;
+namespace Service\Providers;
 
-use App\Event\QueryLogger;
+use Service\Event\QueryLogger;
 use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -15,8 +15,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\Event'   => [
-            'App\Listeners\EventListener',
+        'Service\Events\Event'   => [
+            'Service\Listeners\EventListener',
         ],
         QueryExecuted::class => [
             QueryLogger::class,

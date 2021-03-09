@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Account\Domain\Models;
+namespace Core\Account\Domain\Models;
 
 final class AccountNumber
 {

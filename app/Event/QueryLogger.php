@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Event;
+namespace Service\Event;
 
 use Illuminate\Database\Events\QueryExecuted;
 use Psr\Log\LoggerInterface;

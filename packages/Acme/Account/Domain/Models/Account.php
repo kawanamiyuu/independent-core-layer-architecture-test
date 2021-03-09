@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Account\Domain\Models;
+namespace Core\Account\Domain\Models;
 
 final class Account
 {
@@ -47,7 +47,7 @@ final class Account
 
     /**
      * @param Money $money
-     * @throws \Acme\Account\Domain\Exceptions\InvariantException
+     * @throws \Core\Account\Domain\Exceptions\InvariantException
      */
     public function deposit(Money $money)
     {
@@ -56,7 +56,7 @@ final class Account
 
     /**
      * @param Money $money
-     * @throws \Acme\Account\Domain\Exceptions\InvariantException
+     * @throws \Core\Account\Domain\Exceptions\InvariantException
      */
     public function withdraw(Money $money)
     {

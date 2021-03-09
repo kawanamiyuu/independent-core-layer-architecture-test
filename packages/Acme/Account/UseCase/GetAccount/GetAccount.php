@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Account\UseCase\GetAccount;
+namespace Core\Account\UseCase\GetAccount;
 
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\AccountNumber;
 
 final class GetAccount
 {

@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Action\GetAccount;
+namespace Service\Action\GetAccount;
 
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\UseCase\GetAccount\GetAccountQueryPort;
-use App\Eloquents\EloquentAccount;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\UseCase\GetAccount\GetAccountQueryPort;
+use Service\Eloquents\EloquentAccount;
 
 final class GetAccountAdapter implements GetAccountQueryPort
 {

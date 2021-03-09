@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Account\UseCase\ProcedureStyleTransferMoney;
+namespace Core\Account\UseCase\ProcedureStyleTransferMoney;
 
-use Acme\Account\Domain\Exceptions\DomainRuleException;
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\UseCase\Ports\TransactionPort;
+use Core\Account\Domain\Exceptions\DomainRuleException;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\UseCase\Ports\TransactionPort;
 use Cake\Chronos\Chronos;
 
 final class ProcedureStyleTransferMoney

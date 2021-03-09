@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Acme\Test\Account\UseCase;
+namespace Core\Test\Account\UseCase;
 
 final class ArrayRepository implements \ArrayAccess
 {

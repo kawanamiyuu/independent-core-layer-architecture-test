@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Action\DDDStyleTransferMoney;
+namespace Service\Action\DDDStyleTransferMoney;
 
-use Acme\Account\Domain\Aggregates\TransferMoneyAggregate;
-use Acme\Account\Domain\Exceptions\NotFoundException;
-use Acme\Account\Domain\Models\Account;
-use Acme\Account\Domain\Models\AccountNumber;
-use Acme\Account\Domain\Models\Transaction;
-use Acme\Account\UseCase\DDDStyleTransferMoney\DDDStyleTransferMoneyCommandPort;
-use Acme\Account\UseCase\DDDStyleTransferMoney\DDDStyleTransferMoneyQuery;
-use App\Eloquents\EloquentAccount;
-use App\Eloquents\EloquentTransaction;
-use App\Mail\TransferMoneyMail;
+use Core\Account\Domain\Aggregates\TransferMoneyAggregate;
+use Core\Account\Domain\Exceptions\NotFoundException;
+use Core\Account\Domain\Models\Account;
+use Core\Account\Domain\Models\AccountNumber;
+use Core\Account\Domain\Models\Transaction;
+use Core\Account\UseCase\DDDStyleTransferMoney\DDDStyleTransferMoneyCommandPort;
+use Core\Account\UseCase\DDDStyleTransferMoney\DDDStyleTransferMoneyQuery;
+use Service\Eloquents\EloquentAccount;
+use Service\Eloquents\EloquentTransaction;
+use Service\Mail\TransferMoneyMail;
 use Illuminate\Contracts\Mail\Mailer;
 
 final class DDDStyleTransferMoneyAdapter implements

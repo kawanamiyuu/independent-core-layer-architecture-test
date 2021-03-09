@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Account\UseCase\Ports;
+namespace Core\Account\UseCase\Ports;
 
 interface TransactionPort
 {

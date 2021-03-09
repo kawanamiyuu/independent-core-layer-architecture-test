@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Http;
+namespace Service\Http;
 
-use App\Http\Middleware\EncryptCookies;
-use App\Http\Middleware\RedirectIfAuthenticated;
-use App\Http\Middleware\TrustProxies;
-use App\Http\Middleware\VerifyCsrfToken;
+use Service\Http\Middleware\EncryptCookies;
+use Service\Http\Middleware\RedirectIfAuthenticated;
+use Service\Http\Middleware\TrustProxies;
+use Service\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Auth\Middleware\Authenticate;
 use Illuminate\Auth\Middleware\AuthenticateWithBasicAuth;
 use Illuminate\Auth\Middleware\Authorize;
