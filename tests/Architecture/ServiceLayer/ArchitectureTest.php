@@ -17,8 +17,8 @@ class ArchitectureTest extends BaseArchitectureTest
             ->classesThat(Selector::haveClassName("Service\\Action\\*Action"))
             ->canOnlyDependOn()
 
-            // Core Layer and the Adapter
-            ->classesThat(Selector::haveClassName("Service\\Action\\*Adapter"))
+            // Core Layer
+//            ->classesThat(Selector::haveClassName("Service\\Action\\*Adapter"))
             ->andClassesThat(Selector::haveClassName("Core\\*"))
 
             // Http Request
